@@ -1,0 +1,60 @@
+* {
+    -o-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    outline: none;
+    outline-color: transparent;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+}
+
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+div, article, section, input {
+    display: block;
+    position: relative;
+}
+.w-full {
+    width: 100%;
+}
+.w-screen {
+    width: 100vw;
+}
+.h-screen {
+    height: 100vh;
+}
+.h-full {
+    height: 100%;
+}
+
+.flex {
+    display: flex;
+}
+.flex-col {
+    flex-direction: column;
+}
+.flex-row {
+    flex-direction: row;
+}
+.justify-between {
+    justify-content: space-between;
+}
+.justify-evenly {
+    justify-content: space-evenly;
+}
+.justify-arround {
+    justify-content: space-around;
+}
+.cursor-pointer {
+    cursor: pointer;
+}
