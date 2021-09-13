@@ -12,7 +12,7 @@ import { ReactComponent as PhoneIcon } from '../../assets/ico_phone.svg';
 const Nav = () => {
     const {currentSection} = useContext(SectionContext);
     return (
-        <div className="absolute h-screen flex flex-col justify-center items-center column-gap space-y right-0">
+        <div className="absolute h-screen flex flex-col justify-center items-center column-gap space-y right-0 z-above-all">
             <NavItem
                 title="Home"
                 Icon={PersonIcon}
