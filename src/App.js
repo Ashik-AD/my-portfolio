@@ -1,5 +1,6 @@
 import React, {useState} from 'react';
 import './App.css';
+import Main from './components/main/Main';
 import Nav from './components/nav/Nav';
 
 export const SectionContext = React.createContext();
@@ -14,6 +15,7 @@ const App = () => {
             <SectionContext.Provider value={{currentSection, handleCurrentSection}}>
                 <div className="container">
                     <Nav />
+                    <Main />
                 </div>
             </SectionContext.Provider>
         </div>
