@@ -1,4 +1,5 @@
 import React from 'react';
+
 import SectionHeader from '../header/SectionHeader';
 
 import {ReactComponent as IconHtml } from '../../assets/ico_html.svg'
@@ -9,8 +10,7 @@ import {ReactComponent as IconNode } from '../../assets/ico_node.svg'
 import {ReactComponent as IconTs } from '../../assets/ico_ts.svg'
 import Arrow from '../arrows/Arrow';
 
-
-const Skills = () => {
+const Skills = ({slideDirection, isVisible, prevSlideIndex, index}) => {
     const skillList = [
         {
             level: 'Expert',
@@ -39,7 +39,10 @@ const Skills = () => {
     ];
 
     return(
-        <section className="w-screen h-screen sec_skills flex flex-col bg-black">
+        <section
+            className={`${slideDirection} ${isVisible ? 'zindex-above-all' : 'neg-zindex-2'} w-screen h-screen sec_skills flex flex-col bg-black fixed top-0`}
+            style={prevSlideIndex === index ? {zIndex: '-1'} : null}
+        >
             <div className="container">
                 <SectionHeader
                     text="~/my/skills"
@@ -53,8 +56,8 @@ const Skills = () => {
                     </div>
                     )) }
                 </div>
-                <Arrow id="contact" styles="fill-green cursor-pointer" />
             </div>
+                <Arrow id={3} styles="fill-green cursor-pointer" />
         </section>
     );
 }

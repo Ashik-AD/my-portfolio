@@ -2,8 +2,10 @@ import React from 'react';
 import SectionHeader from '../header/SectionHeader';
 import SocialLinks from '../social-links/SocialLinks';
 
-const Contact = () => (
-    <section className="contact h-screen w-screen bg-deep-blue">
+const Contact = ({slideDirection, isVisible, prevSlideIndex, index}) => (
+    <section className={`${slideDirection} ${isVisible ? 'zindex-above-all' : 'neg-zindex-2'} contact fixed top-0 h-screen w-screen bg-deep-blue`}
+    style={prevSlideIndex === index ? {zIndex: '-1'} : null}
+    >
         <div className="container px-3 sm-px-0">
             <div className=" w-full h-screen flex flex-col justify-center items-center space-y">
                 <div className="sec_header">
@@ -16,7 +18,7 @@ const Contact = () => (
                 <div className="contact_opt flex flex-col jsutify-center items-center space-y-2">
                     <div className="text-blue">
                         <span className="text-35 sm-text-70 font-medium">OR,</span>
-                        <span className="text-18 sm-text-30"> catch me up here :)</span>
+                        <span className="text-18 sm-text-30"> catch me up here :{')'}</span>
                     </div>
                     <SocialLinks />
                 </div>
