@@ -14,7 +14,7 @@
     --c-black: #0b0909f5; 
     --c-dark-blue: #293746;
     --c-green: #04B500;
-    --c-t-main: #fffffffa;
+    --c-t-main: #ffffffef;
     --c-t-main-fade: #868686;
 
 }
@@ -62,11 +62,12 @@ div, article, section, input {
 .text-depp-blue{color: var(--c-dark-blue);}
 .text-blue{color: var(--c-blue);}
 .text-green{color: var(--c-green);}
-
+.text-center{text-align: center;}
 
 /* FONTS */
 .font-bold {font-weight: 700;}
 .font-semibold {font-weight: 600;}
+.font-medium{font-weight: 500;}
 .font-regular {font-weight: 400;}
 
 .text-15 {font-size: 15px;}
@@ -196,7 +197,8 @@ div, article, section, input {
 .ml-30{margin-left: 30px;}
 .ml-50{margin-left: 50px;}
 .ml-70{margin-left: 70px;}
-
+.mx-1{margin-left: 1rem; margin-right: 1rem;}
+.mx-2{margin-left: 1.2rem;margin-right: 1.2rem;}
 .py-1 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
@@ -229,12 +231,14 @@ div, article, section, input {
     padding-left: 2.5rem;
     padding-right: 2.5rem;
 }
-.pt-10{padding-top: 2.5rem;}
+.pt-5{padding-top: 1.8rem;}
 .pt-10{padding-top: 2.5rem;}
 @media (min-width: 640px){
     .sm-mt-0{margin-top: 0!important;}
     .sm-mt-10{margin-top: 5rem;}
     .sm-ml-70 {margin-left: 70px;}
+    .sm-mx-2{margin-left: 1.2rem;margin-right: 1.2rem;}
+    .sm-mx-1{margin-left: 1rem; margin-right: 1rem;}
     .sm-pt-10 {padding-top: 5rem;}
     .sm-space-y > * + * {margin-top: 50px;}
     .sm-pt-0{padding-top: 0;}
@@ -274,12 +278,14 @@ div, article, section, input {
         margin: 0 auto;
     }
     .md-w-80{width: 80%;}
+    .md-text-50{font-size: 50px;}
 }
 @media (min-width: 1024px) { 
     .container {
         width: 978px;
         margin: 0 auto;
     }
+    .lg-text-60 {font-size: 60px;}
 }
 @media (min-width: 1280px) { 
     .container {
@@ -287,6 +293,7 @@ div, article, section, input {
         margin: 0 auto;
     }
     .xl-w-half {width: 50%;}
+    .xl-text-60 {font-size: 60px;}
 }
 
 .fill-green * {
@@ -296,3 +303,5 @@ div, article, section, input {
     left: 50%;
     transform: translate(-50%, 0);
 }
+
+.social-icon-size {width: 30px;height: 30px;}
