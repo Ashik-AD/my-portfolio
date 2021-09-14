@@ -16,8 +16,8 @@ const Main = ({ slideDirection, isVisible, prevSlideIndex, index }) => {
                     <span className="text-main text-18">Ashik Dhimal</span>
                     <span className="brackets text-purple text-20">{'}'}</span>
                 </article>
-                <div className="blob-wrapper h-screen top-0">
-                    <Blob className="sm-blob-h sm-blob-w absolute center-element opacity-8"/>
+                <div className="blob-wrapper absolute h-screen w-full top-0 flex items-center content-center">
+                    <Blob className="sm-blob-h sm-blob-w opacity-8"/>
                 </div>
                 <div className="absolute h-screen top-0 flex flex-col justify-center text-main space-y-2 sm-space-y sm-pt-10 line-h-1 zindex-above-all">
                     <span className="text-35 sm-text-80 font-bold">HI i'm a</span>
