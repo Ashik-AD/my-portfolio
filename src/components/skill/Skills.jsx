@@ -43,7 +43,7 @@ const Skills = () => {
             <div className="container">
                 <SectionHeader
                     text="~/my/skills"
-                    styles="text-30 sm-text-60 text-green font-regular py-3 sm-py-10"
+                    styles="text-30 text-green font-regular py-3 sm-py-10"
                 />
                 <div className="skill-card grid grid-col-2 sm-grid-col-3 row-gap w-90 sm-py-10 sm-w-half md-w-80 xl-w-half">
                     {skillList.map((skill, index) =>(
